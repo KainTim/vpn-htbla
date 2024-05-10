@@ -35,7 +35,7 @@ openswan könnte eventuell auch problematisch sein, wenn irgendetwas nicht funkt
 Dieser Befehl lädt die Konfigurationsdatei von Github herunter und speichtert sie im aktuellen Verzeichnis unter htbla-vpn.conf
 
 ```
-curl #werde config file auf github hosten
+curl https://raw.githubusercontent.com/KainTim/vpn-htbla/main/htbla-vpn.conf > htbla-vpn.conf
 ```
 
 Mit diesem Befehl importieren wir die vorher heruntergeladene Datei.
