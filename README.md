@@ -1,7 +1,7 @@
 # BENÖTIGTE PACKAGES INSTALLIEREN
 
 
-## FEDORA
+## Fedora
 
 Mit diesem Befehl werden die Dependencies für die l2tp Verbindung unter Fedora/RHEL und Derivaten(Nobara) installiert  .
 
@@ -44,7 +44,7 @@ apt install network-manager-l2tp network-manager-strongswan
 Nun kann mit der Sektion "Verbindung Herstellen" weitergemacht werden.
 
 
-## ARCH
+## Arch
 
 Mit diesem Befehl werden die Dependencies für die l2tp Verbindung unter Arch Linux und Derivaten(Manjaro, Endevour) installiert.
 
