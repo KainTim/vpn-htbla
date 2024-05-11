@@ -3,7 +3,7 @@
 
 ## FEDORA
 
-Mit diesem Befehl werden die Dependencies für die l2tp Verbindung unter Fedora/RHEL installiert  .
+Mit diesem Befehl werden die Dependencies für die l2tp Verbindung unter Fedora/RHEL und Derivaten(Nobara) installiert  .
 
 ```
 sudo dnf install NetworkManager-l2tp NetworkManager-strongswan
@@ -60,7 +60,7 @@ nmcli connection modify HTBLA-VPN vpn.secrets "ipsec-psk = htlgrieskirchen, pass
 
 # VERBINDUNG AKTIVIEREN
 Dieser Befehl aktiviert die Verbindung nun schlussendlich.  
-Das kann auch in einer GUI gemacht werden, beim ersten mal sollte es aber über das Terminal gemacht werden um zu sehen ob alles funktioniert
+Das kann später auch in einer GUI gemacht werden, beim ersten mal sollte es aber über das Terminal gemacht werden um zu sehen ob alles funktioniert
 
 ```
 nmcli connection up HTBLA-VPN
@@ -70,7 +70,7 @@ nmcli connection up HTBLA-VPN
 
 # AUFRÄUMEN
 
-#Mit diesem Befehl löschen wir die zuvor heruntergeladene Konfigurationsdatei die nun nicht mehr benötigt wird
+Mit diesem Befehl löschen wir die zuvor heruntergeladene Konfigurationsdatei, die nun nicht mehr benötigt wird
 
 ```
 rm htbla-vpn.conf
