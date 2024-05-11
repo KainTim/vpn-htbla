@@ -16,6 +16,13 @@ Wenn libreswan benötigt wird, diesen Befehl nicht ausführen!
 sudo dnf remove libreswan
 ```
 
+Mit diesen Befehlen werden die benötigten Kernel-Module entblockiert
+
+```
+sudo sed -e '/blacklist l2tp_netlink/s/^b/#b/g' -i /etc/modprobe.d/l2tp_netlink-blacklist.conf
+sudo sed -e '/blacklist l2tp_ppp/s/^b/#b/g' -i /etc/modprobe.d/l2tp_ppp-blacklist.conf
+```
+
 Nun kann mit der Sektion "Verbindung Herstellen" weitergemacht werden.
 
 
@@ -69,7 +76,7 @@ curl https://raw.githubusercontent.com/KainTim/vpn-htbla/main/htbla-vpn.conf > h
 Mit diesem Befehl importieren wir die vorher heruntergeladene Datei.
 
 ```
-nmcli connection import type l2tp file htbla-vpn
+nmcli connection import type l2tp file htbla-vpn.conf
 ```
 
 Dieser Befehlt setzt den Benutzernamen in der VPN-Verbindung auf den eingegebenen Wert (NachnameVXXXXX).
