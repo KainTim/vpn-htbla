@@ -60,9 +60,14 @@ Mit diesem Befehl werden die Dependencies für die l2tp Verbindung unter Arch Li
 sudo pacman -S networkmanager-l2tp networkmanager-strongswan
 ```
 
-Libreswan ist nicht in den offiziellen repos und wird deswegen vermutlich nicht problematisch sein.
-Wenn die version aus dem AUR installiert ist dann sollte das deinstalliert werden  .
-openswan könnte eventuell auch problematisch sein, wenn irgendetwas nicht funktioniert sollte das auch deinstalliert werden.  
+
+## openSuSE Tumbleweed
+
+Mit diesem Befehl werden die Dependencies für die l2tp Verbindung unter OpenSuSE Tumbleweed und OpenSuSE Leap installiert.
+
+```
+sudo zypper install NetworkManager-l2tp strongswan-nm
+```
 
 Nun kann mit der Sektion "Verbindung Herstellen" weitergemacht werden.
 
