@@ -1,4 +1,5 @@
 # BENÖTIGTE PACKAGES INSTALLIEREN
+Bitte der Anleitung folgen, die der genutzten Distribution entspricht!
 
 
 ## Fedora
