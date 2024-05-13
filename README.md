@@ -96,6 +96,7 @@ nmcli connection modify HTBLA-VPN vpn.secrets "ipsec-psk = htlgrieskirchen, pass
 # VERBINDUNG AKTIVIEREN
 Dieser Befehl aktiviert die Verbindung nun schlussendlich.  
 Das kann später auch in einer GUI gemacht werden, beim ersten mal sollte es aber über das Terminal gemacht werden um zu sehen ob alles funktioniert.
+Dieser Befehl funktioniert nicht in der Schule, da man nicht im selben Netzwerk sein kann.
 
 ```
 nmcli connection up HTBLA-VPN
