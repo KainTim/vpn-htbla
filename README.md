@@ -117,3 +117,13 @@ Mit diesem Befehl löschen wir die zuvor heruntergeladene Konfigurationsdatei, d
 ```
 rm htbla-vpn.conf
 ```
+
+
+# S-LAUFWERK VERBINDUNG
+
+Das S-Laufwerk kann bei aktiver VPN-Verbindung nun unter 10.10.0.3/Daten in den meisten File managers erreicht werden.
+Beim eingeben des Benutzernamens muss aufgepasst werden, da er in der Form 
+
+```htl\<Benutzername>``` 
+
+eingegeben werden muss.
