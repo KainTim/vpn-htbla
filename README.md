@@ -76,13 +76,13 @@ Nun kann mit der Sektion "Verbindung Herstellen" weitergemacht werden.
 Dieser Befehl lädt die Konfigurationsdatei von Github herunter und speichtert sie im aktuellen Verzeichnis unter htbla-vpn.conf.
 
 ```
-curl https://raw.githubusercontent.com/KainTim/vpn-htbla/main/htbla-vpn.conf > htbla-vpn.conf
+curl https://raw.githubusercontent.com/KainTim/vpn-htbla/main/htbla-vpn.conf > ~/htbla-vpn.conf
 ```
 
 Mit diesem Befehl importieren wir die vorher heruntergeladene Datei.
 
 ```
-nmcli connection import type l2tp file htbla-vpn.conf
+nmcli connection import type l2tp file ~/htbla-vpn.conf
 ```
 
 Dieser Befehlt setzt den Benutzernamen in der VPN-Verbindung auf den eingegebenen Wert (NachnameVXXXXX).
@@ -103,7 +103,7 @@ nmcli connection modify HTBLA-VPN vpn.secrets "ipsec-psk = htlgrieskirchen, pass
 Mit diesem Befehl löschen wir die zuvor heruntergeladene Konfigurationsdatei, die nun nicht mehr benötigt wird.
 
 ```
-rm htbla-vpn.conf
+rm ~/htbla-vpn.conf
 ```
 
 
