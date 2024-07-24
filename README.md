@@ -98,6 +98,14 @@ nmcli connection modify HTBLA-VPN vpn.secrets "ipsec-psk = htlgrieskirchen, pass
 ```
 
 
+# AUFRÄUMEN
+
+Mit diesem Befehl löschen wir die zuvor heruntergeladene Konfigurationsdatei, die nun nicht mehr benötigt wird.
+
+```
+rm htbla-vpn.conf
+```
+
 
 # VERBINDUNG AKTIVIEREN
 Dieser Befehl aktiviert die Verbindung nun schlussendlich.  
@@ -106,16 +114,6 @@ Dieser Befehl funktioniert nicht in der Schule, da man nicht im selben Netzwerk 
 
 ```
 nmcli connection up HTBLA-VPN
-```
-
-
-
-# AUFRÄUMEN
-
-Mit diesem Befehl löschen wir die zuvor heruntergeladene Konfigurationsdatei, die nun nicht mehr benötigt wird.
-
-```
-rm htbla-vpn.conf
 ```
 
 
